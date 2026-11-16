@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <title>Turf Trouble</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+    <script src="../../sdk/2web.js"></script>
+</head>
+<body>
+    <canvas id="view"></canvas>
+
+    <div id="hud" hidden>
+        <div class="tl">
+            <div class="bar health"><i id="health"></i></div>
+            <canvas id="minimap" width="160" height="160" role="button" aria-label="Open map"></canvas>
+        </div>
+        <div class="tc">
+            <div class="label">MISSION</div>
+            <div id="mission"></div>
+            <div class="bar bust" id="bust" hidden><i></i><span>GETTING CAUGHT</span></div>
+            <div class="bar boss" id="boss" hidden><i></i><span>GONZALVES</span></div>
+        </div>
+        <div class="tr">
+            <div id="money">$0</div>
+            <div id="heat" aria-label="Heat level"><b></b><b></b><b></b><b></b><b></b></div>
+            <div class="row">
+                <button id="btn-mute" class="icon" aria-label="Mute">♪</button>
+                <button id="btn-pause" class="icon" aria-label="Pause">❚❚</button>
+            </div>
+        </div>
+        <div class="bc">
+            <div id="toast"></div>
+            <div id="prompt" hidden></div>
+        </div>
+        <div class="br" id="gadget" hidden>
+            <div id="gadget-name"></div>
+            <div id="ammo"></div>
+        </div>
+        <div id="crosshair" hidden></div>
+        <div id="hurt"></div>
+    </div>
+
+    <div id="touch" hidden>
+        <div id="stick"><div id="knob"></div></div>
+        <button id="t-swap" class="tb small" hidden>SWAP</button>
+        <button id="t-act" class="tb small" hidden>DRIVE</button>
+        <button id="t-jump" class="tb mid">JUMP</button>
+        <button id="t-fire" class="tb big" hidden>FIRE</button>
+    </div>
+
+    <div id="caption" hidden></div>
+
+    <div id="menu" class="screen">
+        <div class="panel">
+            <h1>TURF<br><span>TROUBLE</span></h1>
+            <p class="tag">Back in town. Big boss to chase out. Bring paint.</p>
+            <div class="choices">
+                <button id="btn-continue" class="btn primary" hidden>CONTINUE</button>
+                <button id="btn-new" class="btn">NEW GAME</button>
+            </div>
+            <p class="help" id="help"></p>
+            <p class="ver" id="ver"></p>
+        </div>
+    </div>
+
+    <div id="modal" class="screen" hidden>
+        <div class="panel">
+            <h2 id="modal-title"></h2>
+            <p id="modal-body"></p>
+            <div id="modal-buttons"></div>
+        </div>
+    </div>
+
+    <div id="map" class="screen" hidden>
+        <div class="panel">
+            <canvas id="bigmap" width="512" height="512"></canvas>
+            <p class="legend"><b class="k you"></b>You <b class="k goal"></b>Mission <b class="k home"></b>Hideout <b class="k cop"></b>Police <b class="k gang"></b>Scrapyard <b class="k car"></b>Crew car</p>
+            <button id="btn-map-close" class="btn primary">CLOSE</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

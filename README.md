@@ -33,6 +33,12 @@ This project is a GTA Clone that incorporates various mechanics and features, pr
   <img src="https://github.com/SERAP-KEREM/GTAVClone/blob/main/Assets/GameImages/6.png" alt="Game Screenshot 6" width="300">
 </p> 
 
+## 🌐 2Web build
+
+A browser version made for 2Web lives in [`2web/`](2web/README.md): a cartoon remake called
+**Turf Trouble** that follows the 2Web porting rules. The zip to send is
+`2web/dist/turf-trouble-1.0.0.zip`.
+
 ## 🛠 Technologies Used
 
 ![](https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white) ![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)

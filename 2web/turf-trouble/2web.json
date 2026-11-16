@@ -1,0 +1,11 @@
+{
+    "slug": "turf-trouble",
+    "title": "Turf Trouble",
+    "version": "1.0.0",
+    "description": "Roam a blocky open town on foot or by car, follow four story missions and collect cash for new paint gadgets. Splat boss Gonzalves and his crew out of the scrapyard to win, but stay out of trouble or the police will chase you.",
+    "controls": "WASD or arrows to move and steer, drag the mouse to look, click or K to fire, Space to jump or brake, E to drive, M for the map. On touch screens drag the left side to move, the right side to look, and tap the round buttons.",
+    "categories": ["action", "adventure"],
+    "tags": ["city", "driving", "paint", "missions", "police"],
+    "rating": "12",
+    "ratingNote": "cartoon paint-blaster fights, no blood"
+}
